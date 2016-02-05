@@ -1,0 +1,81 @@
+body {
+	/*background-color: #ccccff;*/
+}
+
+h1 {
+		margin: 0 auto;
+		max-width: 700px;
+		font-size:300%;
+		font-family:Helvetica;
+}
+
+p {
+		/*margin: 0 auto;
+		padding: 20px;*/
+		color: gray;
+		font-size:14pt;
+		font-family:Helvetica;
+}
+
+#author {
+	position:absolute;
+	margin: 0px;
+	top:10px;
+	left: 10px;
+	font-size: 25px;
+	font-family:Helvetica;
+}
+
+#author a {
+	text-decoration: none;
+	color:black;
+}
+
+#svg {
+	/*background: whiteSmoke;*/
+}
+
+.hiddenCircle {
+	fill: red;
+}
+
+.pixOn {
+	fill: blue;
+}
+
+.pixOff {
+	fill: green;
+}
+
+.sinapsis12 {
+	fill: none;
+	stroke: blue;
+	/*stroke-width: 2;*/
+	/*stroke-dasharray: 1, 7.425;*/
+	opacity: 0.2;
+}
+
+.sinapsis23 {
+	fill: blue;
+	stroke-width: 0;
+	/*stroke-dasharray: 1, 7.425;*/
+	opacity: 0.2;
+}
+
+.lineBar {
+	stroke: black;
+	stroke-width: 3px;
+	opacity: 0.5;
+}
+
+.outputCircle {
+	fill: white;
+	stroke: purple;
+	stroke-width: 1;
+}
+
+.outputText {
+	fill: black;
+	text-anchor: middle;
+	font: 40px Helvetica;
+}

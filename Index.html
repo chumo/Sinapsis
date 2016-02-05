@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding"> -->
+  <meta charset="UTF-8">
+  <meta name="description" content="d3 visualization of a convolutional neural network for digit recognition">
+  <meta name="keywords" content="d3, d3.js, visualization, convolutional neural networks, CNN, data science, digit recognition">
+  <meta name="author" content="Jesús Martínez-Blanco">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <title>Sinapsis</title>
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link href="css/chumo.css" rel="stylesheet">
+
+  <script src="lib/d3.min.js"></script>
+  <script src="lib/underscore-min.js"></script>
+
+</head>
+
+
+<body style='text-align:center'>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a3a9ab5aac0b42" async="async"></script>
+
+  <!--  width and height of the window -->
+  <script>
+    var W = window.innerWidth;
+    var H = window.innerHeight;
+  </script>
+
+  <h1>Sinapsis</h1>
+  <div align='center'><p>Visualize the computations inside a convolutional neural network trained for digit recognition.</br>Write a digit from 0 to 9 in the central panel and let the app recognize it.</p></div>
+
+  <div id='container'>
+  </div>
+
+  <p id='author'>
+    <a href='https://github.com/chumo/Sinapsis'>chumo &copy 2016</a></br>
+    <span style="font-size:14pt;">Network trained by</span></br>
+    <a style="font-size:14pt;" href='http://myselph.de/aboutMe.html'>Hubert Eichner</a>
+  </p>
+
+  <div style="font:18px Helvetica;">
+    <span style="color:green;">Input layer</span>
+    <span style="color:red;">Hidden layer</span>
+    <span style="color:purple;">Output layer</span>
+  </div>
+
+  <!-- Load neural network -->
+  <script src="js/net.js"></script>
+
+  <!-- Load some auxiliary functions -->
+  <script src="js/Aux.js"></script>
+
+  <!-- Create the svgs and so -->
+  <script src='js/Script.js'></script>
+
+</body>
+
+</html>
